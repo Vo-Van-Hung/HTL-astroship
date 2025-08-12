@@ -9,11 +9,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    
-    
+    <div class="container mx-auto px-5">
+        <div class="mt-24">
+            <h2 class="text-4xl font-bold">Everything you need to
+                <span class="text-indigo-600">start a website</span>
+            </h2>
+            <p class="mt-4 text-lg text-black/60">Astro comes batteries included. It takes the best parts of
+                state-of-the-art tools and adds its own
+                innovations.</p>
+        </div>
+        <!--  -->
+        <div class="grid grid-cols-5 gap-10 mt-16">
+            <!-- ảnh trái -->
+            <div class="col-span-3 hover:shadow-lg transition-all p-8 bg-gray-50 rounded-2xl ring-1 ring-gray-200/50">
+                <!-- item image -->
+                <div class="overflow-hidden relative flex items-start justify-center h-80">
+                    <div class="absolute inset-0 bg-linear-to-t from-gray-50 via-transparent z-10"></div>
+                    <picture>
+                        <source srcset="./images/2.CV1PrsFe_21aLfe.avif" type="image/avif">
+                        <source srcset=".images/2.CV1PrsFe_21aLfe.webp" type="image/webp">
+                        <img src="./images/2.CV1PrsFe_21aLfe.png" alt="Feature image">
+                    </picture>
+                </div>
+                <!-- item text -->
+                <div class="mt-2">
+                    <span
+                        class="px-3 py-1 text-xs font-semibold text-purple-600 bg-purple-100 rounded-full border border-purple-200">Astroship</span>
+                    <h3 class="mt-2 text-xl font-semibold">Responsive Template</h3>
+                    <p class="mt-2 text-black/60">Astroship is a creative and modern mobile responsive website template
+                        that helps you create any kind of marketing websites or landing pages. </p>
+                </div>
+            </div>
+            <!-- ảnh phải -->
+            <div class="col-span-2 hover:shadow-lg transition-all p-8 bg-gray-50 rounded-2xl ring-1 ring-gray-200/50">
+                <!-- item image -->
+                <div class="overflow-hidden relative flex items-start justify-center h-80">
+                    <div class="absolute inset-0 bg-linear-to-t from-gray-50 via-transparent z-10"></div>
+                    <picture>
+                        <source srcset="./images/2.CV1PrsFe_21aLfe.avif" type="image/avif">
+                        <source srcset="./images/2.CV1PrsFe_21aLfe.webp" type="image/webp">
+                        <img src="./images/2.CV1PrsFe_21aLfe.png" alt="Feature image">
+                    </picture>
+                </div>
+
+                <!-- item text -->
+                <div class="mt-2">
+                    <span
+                        class="px-3 py-1 text-xs font-semibold text-indigo-600 bg-indigo-100 border border-indigo-200 rounded-full">Creative</span>
+                    <h3 class="mt-2 text-xl font-semibold">Next Level Template</h3>
+                    <p class="mt-2 text-black/60"> Astroship is a new kind of website template that integrates your
+                        favorite tools and workflows.</p>
+                </div>
+            </div>
 </body>
 
 </html>
