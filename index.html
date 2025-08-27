@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astroship Pro - SAAS Startup Website Template for Astro</title>
+    <!-- <title>Astroship Pro - SAAS Startup Website Template for Astro</title> -->
+    <title>Mon</title>
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
@@ -15,7 +16,7 @@
 
 <body>
     <!-- start website -->
-    <div class="container mx-auto px-5">
+    <div class="lg:container mx-auto px-5">
         <!-- 1 -->
         <div class="mt-24">
             <h2 class="text-4xl font-bold">Everything you need to
@@ -26,11 +27,12 @@
                 innovations.</p>
         </div>
         <!-- 2 -->
-        <div class="grid grid-cols-5 gap-10 mt-16">
+        <div class=" md:grid grid-cols-2 lg:grid-cols-5 gap-10 md:mt-16 mt-10">
             <!-- ảnh trái -->
-            <div class="col-span-3 hover:shadow-lg transition-all p-8 bg-gray-50 rounded-2xl ring-1 ring-gray-200/50">
+            <div
+                class=" lg:col-span-3 hover:shadow-lg transition-all p-8 bg-gray-50 rounded-2xl ring-1 ring-gray-200/50">
                 <!-- item image -->
-                <div class="overflow-hidden relative flex items-start justify-center h-80">
+                <div class="overflow-hidden relative flex items-start justify-center h-auto sm:h-70 lg:h-80 ">
                     <div class="absolute inset-0 bg-linear-to-t from-gray-50 via-transparent z-10"></div>
                     <picture>
                         <source srcset="./images/2.CV1PrsFe_21aLfe.avif" type="image/avif">
@@ -49,9 +51,10 @@
                 </div>
             </div>
             <!-- ảnh phải -->
-            <div class="col-span-2 hover:shadow-lg transition-all p-8 bg-gray-50 rounded-2xl ring-1 ring-gray-200/50">
-                <!-- item image -->
-                <div class="overflow-hidden relative flex items-start justify-center h-80">
+            <div
+                class="lg:col-span-2 hover:shadow-lg transition-all p-8 bg-gray-50 rounded-2xl ring-1 ring-gray-200/50">
+                <!-- item image lg:h-80 h-50-->
+                <div class="overflow-hidden relative flex items-start justify-center  h-auto sm:h-70 lg:h-80 ">
                     <div class="absolute inset-0 bg-linear-to-t from-gray-50 via-transparent z-10"></div>
                     <picture>
                         <source srcset="./images/2.CV1PrsFe_21aLfe.avif" type="image/avif">
@@ -69,14 +72,14 @@
                         integrates your
                         favorite tools and workflows.</p>
                 </div>
-            </div>
+            </div>  
         </div>
         <!-- 3 -->
-        <div class="grid grid-cols-3 gap-10 mt-10 mb-10">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 mb-10">
             <!-- 1 -->
             <div class="hover:shadow-lg p-8 bg-gray-50 rounded-2xl shadow ring-1 ring-gray-200/50 transition-all">
                 <!-- item image -->
-                <div class="overflow-hidden relative flex items-start justify-center h-60">
+                <div class="overflow-hidden relative flex items-start justify-center md:h-60 h-50">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-50 via-transparent z-10"></div>
                     <picture>
                         <source srcset="./images/3.BeIuxAWP_ZbMI3b.avif" type="image/avif">
@@ -97,7 +100,7 @@
             <!-- 2 -->
             <div class="hover:shadow-lg p-8 bg-gray-50 rounded-2xl shadow ring-1 ring-gray-200/50 transition-all">
                 <!-- item image -->
-                <div class="overflow-hidden relative flex items-start justify-center h-60">
+                <div class="overflow-hidden relative flex items-start justify-center md:h-60 h-50">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-50 via-transparent z-10"></div>
                     <picture>
                         <source srcset="./images/2.CV1PrsFe_21aLfe.avif" type="image/avif">
@@ -138,19 +141,19 @@
                 </div>
             </div>
         </div>
-        <!-- 4 -->
-        <div class="container mx-auto w-3xl mt-24 flex flex-col items-center">
+        <!-- 4 w-3xl-->
+        <div class="container mx-auto mt-24 text-center">
             <span class="px-3 py-1 text-xs text-purple-600 bg-purple-100 border border-purple-200 rounded-full">
                 MORE FEATURES </span>
-            <h2 class="mt-4 text-5xl font-bold tracking-tight">We've got you covered</h2>
-            <p class="mt-4 text-lg text-slate-600 text-center">
+            <h2 class="mt-4 text-5xl font-bold leading-15 md:tracking-tight">We've got you covered</h2>
+            <p class="mt-4 text-lg text-slate-600 text-center text-balance ">
                 Our template covers all things SAAS. If you don't find what you're looking
                 for, contact us and we'll either help you or steer you in the right
                 direction.
             </p>
         </div>
         <!-- 5 -->
-        <div class="mt-16 grid grid-cols-3 gap-16">
+        <div class="mt-10 md:mt-16 grid grid-cols-1 md:grid-cols-3 md:gap-16 gap-8">
             <div
                 class="hover:bg-slate-50 hover:border-slate-100 flex flex-col gap-4 items-start group border border-transparent rounded-lg transition-all">
                 <div
@@ -292,9 +295,9 @@
     <footer class="py-14 bg-slate-100">
         <!-- top -->
         <div class="container mx-auto pb-8 px-5">
-            <div class="grid grid-cols-5 gap-8">
-                <div class="col-span-2">
-                    <a href="/" class="flex items-center text-lg">
+            <div class="grid md:grid-cols-5 gap-x-35 gap-y-10 md:gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="flex items-center text-lg">
                         <span class="font-bold text-indigo-600">Astro</span>
                         <span class="text-black/80">ship</span>
                         <span
@@ -317,31 +320,33 @@
                         </a>
                     </div>
                 </div>
-                <div>
-                    <h3 class="text-base font-semibold text-slate-800">Company</h3>
-                    <div class="flex flex-col mt-3">
-                        <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">About</a>
-                        <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Careers</a>
-                        <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Blog</a>
-                        <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Contact</a>
+                <div class="flex justify-between md:w-100 lg:w-150 2xl:w-200">
+                    <div>
+                        <h3 class="text-base font-semibold text-slate-800">Company</h3>
+                        <div class="flex flex-col mt-3">
+                            <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="./pages/about/">About</a>
+                            <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Careers</a>
+                            <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="./pages/blog/index.html">Blog</a>
+                            <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Contact</a>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <h3 class="text-base font-semibold text-slate-800">Product</h3>
-                    <div class="flex flex-col mt-3">
-                        <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">For Startups</a>
-                        <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Features</a>
-                        <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Pricing</a>
-                        <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Integrations</a>
+                    <div>
+                        <h3 class="text-base font-semibold text-slate-800">Product</h3>
+                        <div class="flex flex-col mt-3">
+                            <a class="py-2 w-24 text-sm text-slate-600 hover:text-indigo-600" href="#">For Startups</a>
+                            <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Features</a>
+                            <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Pricing</a>
+                            <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Integrations</a>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <h3 class="text-base font-semibold text-slate-800">Resources</h3>
-                    <div class="flex flex-col mt-3">
-                        <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Help Center</a>
-                        <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Guides</a>
-                        <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Documentation</a>
-                        <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Uptime Status </a>
+                    <div>
+                        <h3 class="text-base font-semibold text-slate-800">Resources</h3>
+                        <div class="flex flex-col mt-3">
+                            <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Help Center</a>
+                            <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Guides</a>
+                            <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Documentation</a>
+                            <a class="py-2 text-sm text-slate-600 hover:text-indigo-600" href="#">Uptime Status </a>
+                        </div>
                     </div>
                 </div>
             </div>
