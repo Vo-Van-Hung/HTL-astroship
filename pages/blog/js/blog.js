@@ -25,8 +25,19 @@ window.addEventListener("scroll", () => {
 //  JS MENU 
 const barsMenu = document.getElementById("barsMenu");
 const menu = document.getElementById("menu");
+const icon = document.querySelector("i");
 barsMenu.addEventListener('click', (event) => {
     menu.classList.toggle("hidden");
+    if (icon.classList.contains("fa-bars")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-x");
+        if (icon.classList.contains("fa-x")) {
+            icon.classList.add("text-sm");
+        } 
+    } else {
+        icon.classList.remove("fa-x");
+        icon.classList.add("fa-bars");
+    }
     event.stopPropagation(); // Ngăn không cho click lan ra document
 });
 
@@ -35,7 +46,6 @@ barsMenu.addEventListener('click', (event) => {
 document.addEventListener('click', (event) => {
     if (!menu.classList.contains("hidden") && !menu.contains(event.target) && event.target !== barsMenu) {
         menu.classList.add("hidden");
-        // rotate-180
     }
 });
 
@@ -47,10 +57,8 @@ buttonPages.addEventListener('click', () => {
     menuPages.classList.toggle("hidden");
 
     if (!menuPages.classList.contains("hidden")) {
-        // Menu đang mở => icon xoay xuống
         chevron.classList.add("rotate-180");
     } else {
-        // Menu đang đóng => icon trở lại bình thường
         chevron.classList.remove("rotate-180");
     }
 });
