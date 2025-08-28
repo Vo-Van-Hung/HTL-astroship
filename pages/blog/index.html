@@ -18,7 +18,7 @@
 
 <body>
     <!-- HEADER -->
-    <header class="fixed -translate-y-16 z-16 max-w-full w-full bg-blue-300">
+    <header class="fixed -translate-y-16 z-16 max-w-full w-full bg-white">
         <div id="headerFixed" class="lg:container mx-auto px-3 py-5 transition-[padding] duration-300">
             <div class="flex flex-col gap-5 lg:flex-row lg:justify-between lg:items-center">
                 <!--  -->
@@ -36,10 +36,11 @@
                     </div>
                     <!--End -->
                 </div>
-                <nav>
+                <!-- class="hidden lg:block"  hidden lg:block-->
+                <nav id="menu" class="hidden lg:block">
                     <ul class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-5 text-sm text-gray-600">
-                        <li>
-                            <el-dropdown class="inline-block group" data-open="false"">
+                        <li class="hidden lg:block">
+                            <el-dropdown class=" inline-block group" data-open="false"">
                                 <button class=" inline-flex gap-1 items-center">
                                 Pages
                                 <i
@@ -57,6 +58,21 @@
                                 </el-menu>
                             </el-dropdown>
                         </li>
+                        <!-- start lg:hidden-->
+                        <li class="lg:hidden">
+                            <button id="btn-pages" class=" inline-flex gap-1 items-center">
+                                Pages
+                                <i id="chevron-icon"
+                                    class="fa-solid fa-chevron-down mt-1 text-[10px] text-gray-400"></i>
+                            </button>
+                            <div id="menu-pages" class="hidden py-1 border-l-1 border-slate-300 ">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700">Feature</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700">Integrations</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700">Blog details</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700">404 Page</a>
+                            </div>
+                        </li>
+                        <!-- end  -->
                         <li>
                             <a href="#">Pricing</a>
                         </li>
@@ -335,39 +351,9 @@
             </div>
         </div>
     </footer>
-
-    <!-- headerFixed JS -->
-    <script>
-        const header = document.getElementById("headerFixed");
-
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 100) {
-                header.classList.remove("py-5");
-                header.classList.add("py-3");
-            } else {
-                header.classList.remove("py-3");
-                header.classList.add("py-5");
-            }
-        });
-    </script>
-    <!-- JS -->
-    <script>
-        const dropdown = document.querySelector('[data-open]');
-        const button = dropdown.querySelector('button');
-
-        button.addEventListener('click', () => {
-            const isOpen = dropdown.getAttribute('data-open') === 'true';
-            dropdown.setAttribute('data-open', isOpen ? 'false' : 'true');
-        });
-    </script>
-    <!-- JS MENU -->
-    <script>
-        const buttonBarsMenu = document.getElementById("barsMenu");
-        buttonBarsMenu.addEventListener('click', () => {
-            
-
-        });
-    </script>
+    
+    <!-- JS-->
+    <script src="./js/blog.js"></script>
 </body>
 
 </html>
